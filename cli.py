@@ -91,7 +91,11 @@ def main():
             if len(sys.argv) < 3:
                 print("Error: Please provide a number")
                 return
-            n = int(sys.argv[2])
+            try:
+                n = int(sys.argv[2])
+            except ValueError:
+                print("Error: Please provide a valid integer")
+                return
             result = factorial(n)
             print(f"factorial({n}) = {result}")
         
@@ -99,7 +103,11 @@ def main():
             if len(sys.argv) < 3:
                 print("Error: Please provide a number")
                 return
-            n = int(sys.argv[2])
+            try:
+                n = int(sys.argv[2])
+            except ValueError:
+                print("Error: Please provide a valid integer")
+                return
             result = is_prime(n)
             print(f"{n} is {'prime' if result else 'not prime'}")
         
@@ -107,7 +115,11 @@ def main():
             if len(sys.argv) < 3:
                 print("Error: Please provide a number")
                 return
-            n = int(sys.argv[2])
+            try:
+                n = int(sys.argv[2])
+            except ValueError:
+                print("Error: Please provide a valid integer")
+                return
             result = fibonacci(n)
             print(f"First {n} Fibonacci numbers: {result}")
         
