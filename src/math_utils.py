@@ -77,7 +77,7 @@ def is_prime(n: int) -> bool:
     return True
 
 
-def fibonacci(n: int) -> list:
+def fibonacci(n: int) -> list[int]:
     """
     Generate the first n Fibonacci numbers.
     
