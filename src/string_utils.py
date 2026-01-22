@@ -74,6 +74,9 @@ def capitalize_words(text: str) -> str:
     """
     Capitalize the first letter of each word in a string.
     
+    Note: This function normalizes whitespace, converting multiple spaces
+    between words into single spaces.
+    
     Args:
         text (str): The string to capitalize
         
@@ -82,6 +85,8 @@ def capitalize_words(text: str) -> str:
         
     Example:
         >>> capitalize_words("hello world")
+        'Hello World'
+        >>> capitalize_words("hello  world")
         'Hello World'
     """
     if not isinstance(text, str):
